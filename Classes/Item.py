@@ -43,6 +43,12 @@ class Item:
                 quantity=int(item.get('quantity')),
             )
 
+    @staticmethod
+    def is_integer(num):
+        if isinstance(num, float):
+            return num.is_integer()
+        elif isinstance(num, int):
+            return True
+        else:
+            return False
 
-Item.instantiate_from_csv()
-print(Item.all)
