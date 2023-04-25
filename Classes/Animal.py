@@ -6,3 +6,6 @@ class Animal:
 
     def make_sound(self):
         return self.sound
+
+    def activity(self):
+        pass

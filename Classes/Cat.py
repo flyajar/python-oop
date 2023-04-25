@@ -10,7 +10,8 @@ class Cat(Animal):
     def purr():
         return 'purring'
 
-    pass
+    def activity(self):
+        return 'loves to sleep'
 
 
 fyodor = Cat('Meow')
@@ -18,3 +19,4 @@ fyodor = Cat('Meow')
 print(fyodor.species)  # Animalia
 print(fyodor.make_sound())  # Meow
 print(fyodor.purr())
+print(fyodor.activity())
