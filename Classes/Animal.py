@@ -1,5 +1,6 @@
 class Animal:
     species: str = 'Animalia'
+
     def __init__(self, sound: str):
         self.sound = sound
 
